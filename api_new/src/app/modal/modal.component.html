@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Delete Employee</h1>
+<div mat-dialog-content>
+  Would you like to delete this employee?
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close (click)="backer()">No</button>
+  <button mat-button mat-dialog-close color="warn" (click)="deleter()" cdkFocusInitial>Delete</button>
+</div>

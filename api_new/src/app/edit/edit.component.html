@@ -1,0 +1,63 @@
+
+<div class="container">
+    <mat-card>
+        <form [formGroup]="employeeForm" >
+            <mat-card-content>
+                <div class="card1-first-trial-box">
+                    <div class="container-sub">
+<!-- name -->
+                        <mat-form-field appearance="fill">
+                            <mat-label>Name</mat-label>
+                            <input formControlName="name" matInput>
+                        </mat-form-field>
+<!-- phone -->
+                        <mat-form-field appearance="fill">
+                            <mat-label>Phone</mat-label>
+                            <input formControlName="phone" matInput>
+                        </mat-form-field>
+<!-- email -->
+                        <mat-form-field appearance="fill">
+                            <mat-label>Email</mat-label>
+                            <input formControlName="email" type="email" matInput>
+                        </mat-form-field>
+<!-- designation -->
+                        <mat-form-field appearance="fill">
+                            <mat-label>Job Role</mat-label>
+                            <mat-select formControlName="designation">
+                                <mat-option value="Front-End Developer">Front-End Developer</mat-option>
+                                <mat-option value="Back-End Developer">Back-End Developer</mat-option>
+                                <mat-option value="Software Tester">Software Tester</mat-option>
+                                <mat-option value="Non-IT Sector">Non-IT Sector</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+<!-- place -->
+                        <mat-form-field appearance="fill">
+                            <mat-label>Place</mat-label>
+                            <mat-select formControlName="place">
+                                <mat-option value="Alappuzha">Alappuzha</mat-option>
+                                <mat-option value="Ernakulam">Ernakulam</mat-option>
+                                <mat-option value="Idukki">Idukki</mat-option>
+                                <mat-option value="Kannur"> Kannur</mat-option>
+                                <mat-option value="Kasaragod">Kasaragod</mat-option>
+                                <mat-option value="Kollam"> Kollam</mat-option>
+                                <mat-option value="Kottayam">Kottayam</mat-option>
+                                <mat-option value="Kozhikode">Kozhikode</mat-option>
+                                <mat-option value="Malappuram">Malappuram</mat-option>
+                                <mat-option value="Palakkad">Palakkad</mat-option>
+                                <mat-option value="Pathanamthitta">Pathanamthitta</mat-option>
+                                <mat-option value="Thiruvananthapuram">Thiruvananthapuram</mat-option>
+                                <mat-option value="Thrissur">Thrissur</mat-option>
+                                <mat-option value="Wayanad">Wayanad</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div class="container-button">
+                            <button [routerLink]="['/view']" (click)="clicker()" mat-raised-button>Update Employee</button>
+                        </div>
+                    </div>
+
+                </div>
+            </mat-card-content>
+        </form>
+    </mat-card>
+</div>

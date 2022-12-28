@@ -1,0 +1,32 @@
+{
+  "name": "employee-detail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev src/index.ts",
+    "pm": "prisma migrate dev",
+    "ps": "prisma studio",
+    "pg": "prisma generate"
+  },
+  "author": "aromal",
+  "license": "ISC",
+  "bugs": {
+  },
+  "dependencies": {
+    "@prisma/client": "4.8.0",
+    "cors": "^2.8.5",
+    "cuid": "^2.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.17",
+    "prisma": "^4.8.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}

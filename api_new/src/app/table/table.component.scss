@@ -1,0 +1,156 @@
+.view-employee--container {
+  height: 89vh;
+  width: 89vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-rows: repeat(auto-fit, 460px);
+  grid-auto-flow: dense;
+  grid-gap: 2rem;
+  overflow: scroll;
+  background: rgb(248, 248, 248);
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 1);
+  width: 100%;
+  height: 10vh;
+}
+
+.head3 {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 1);
+  width: 100%;
+  height: 10vh;
+}
+
+.card {
+  max-width: 40vw;
+  margin: 10px;
+  height: 52.5vh;
+
+  .body1 {
+    height: 20vh;
+
+  }
+
+  p {
+    text-align: justify;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+
+.mdc-card {
+  align-items: center;
+}
+
+.mat-mdc-card-title {
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.mdc-card__actions {
+  margin-top: 5px;
+}
+
+.delete-modal {
+  z-index: 1;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+  background-color: rgba(224, 216, 216, 0.5);
+}
+
+button {
+  margin-left: 15px;
+}
+
+.but {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: -65px;
+}
+
+img {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.red {
+  background-color: red;
+}
+
+.head2 {
+  display: none;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 1);
+  width: 100%;
+  height: 10vh;
+}
+.head4 {
+  display: none;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 1);
+  width: 100%;
+  height: 10vh;
+}
+@media screen and (max-width: 468px) {
+  .view-employee--container {
+    grid-template-rows: repeat(auto-fit, 350px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .head {
+    display: none;
+  }
+
+  .body1 {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    height: 41vh;
+  }
+
+  .view-employee--container {
+    grid-template-rows: repeat(auto-fit, 345px);
+  }
+}
+@media screen and (max-width: 468px) {
+  .mat-mdc-card-title {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 410px) {
+  img {
+    font-size: 12px;
+    height: 90px;
+    width: 90px;
+  }
+  .head4 {
+    display: flex;
+    align-items: center;
+  }
+  .head2{
+    display: none;
+  }
+}

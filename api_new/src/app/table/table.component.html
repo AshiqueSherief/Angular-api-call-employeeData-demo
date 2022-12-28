@@ -1,0 +1,63 @@
+<div class="but">
+    <button [routerLink]="['/']" mat-fab color="secondary" aria-label="Example icon button with a heart icon">
+        <mat-icon>add</mat-icon>
+      </button>
+</div>
+
+
+<div class="view-employee--container">
+    <mat-card class="card" *ngFor="let e of details.emplyDetails">
+        <div class="head3">
+        <mat-card-header>
+
+            <!-- <div mat-card-avatar
+                style="background-image: url('https://avatars.dicebear.com/api/male/{{e.name}}.svg');"
+                class="example-header-image"></div> -->
+            <div class="card-title"><mat-card-title>{{e.name}}</mat-card-title></div>
+            <br>
+        </mat-card-header>
+    </div>
+    <br>
+    <div><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture"></div>
+    <br>
+    <div class="body1">
+        <mat-card-content>
+
+            <p><b>Email: </b>{{e.email}}
+            </p>
+            <p><b>Place : </b>{{e.place}}
+            </p>
+            <p><b>Job Role : </b>{{e.designation}}
+            </p>
+            <p><b>Phone : </b>{{e.phone}}
+            </p>
+           
+        </mat-card-content>
+</div>
+        <div class="head">
+
+        <mat-card-actions>
+            <button color="warn" mat-raised-button (click)="deleter(e.empId)">Delete</button>
+            <button mat-raised-button [routerLink]="['/edit']" (click)="editor(e)">Edit</button>
+        </mat-card-actions>
+        <br>
+        </div>
+        <div class="head2">
+            <button mat-fab color="warn" aria-label="Example icon button with a delete icon">
+              <mat-icon>delete</mat-icon>
+            </button>
+        <button mat-fab color="secondary" aria-label="Example icon button with a delete icon">
+            <mat-icon>edit</mat-icon>
+          </button>
+          </div>
+          <div class="head4">
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+            <button mat-mini-fab color="secondary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              </div>
+    </mat-card>
+  
+</div>
